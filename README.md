@@ -18,6 +18,7 @@ Projeto de infraestrutura focado na automação e provisionamento de um ambiente
 
 ## Arquitetura do Projeto
 
+\\\	ext
   [ Máquina Host (Windows) ]
               │
               ├── Vagrant / VirtualBox
@@ -26,15 +27,18 @@ Projeto de infraestrutura focado na automação e provisionamento de um ambiente
                       ├── Apache Web Server (Porta 80)
                       ├── MySQL Database
                       └── WordPress CMS
+\\\
 
 ---
 
 ## Estrutura do Repositório
 
+\\\	ext
 .
 ├── Vagrantfile         # Configuração da máquina virtual e rede
 ├── .gitignore          # Arquivos ignorados pelo Git
 └── README.md           # Documentação do projeto
+\\\
 
 ---
 
@@ -61,19 +65,25 @@ Ao executar a máquina pela primeira vez, a automação realiza as seguintes eta
 ## Passo a Passo
 
 ### 1. Clonar o repositório
+\\\ash
 git clone https://github.com/jamesoaress/servidor-web-vagrant.git
 cd servidor-web-vagrant
+\\\
 
 ### 2. Subir a Máquina Virtual
+\\\ash
 vagrant up
-(O Vagrant fará o download da imagem base do Ubuntu e executará os scripts de instalação automaticamente.)
+\\\
+*(O Vagrant fará o download da imagem base do Ubuntu e executará os scripts de instalação automaticamente.)*
 
 ### 3. Acessar a aplicação
 Abra o navegador e acesse:
 http://localhost:8080 (ou o IP configurado no seu Vagrantfile)
 
 ### 4. Desligar a máquina
+\\\ash
 vagrant halt
+\\\
 
 ---
 
