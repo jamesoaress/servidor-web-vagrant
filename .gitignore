@@ -1,2 +1,4 @@
 .vagrant/
 chave_vagrant.ppk
+
+*.ppk
